@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="game-area">
+        <div class="menu-game">
+            <h1 class="title">Ping Pong game</h1>
+            <ul class="options menuInitial">
+                <li>Start game</li>
+                <li>Credits</li>
+                <li>contact</li>    
+            </ul>
+            <ul class="options menuStart hide">
+                <li>Player vs Player</li>
+                <li>Player vs Computer</li>
+                <li>Voltar</li>    
+            </ul>
+
+        </div>
+        <div class="game hide">
+            <div class="menu hide">
+                <p class="game-over"></p>
+                <div class="menu-options">
+                    <p class="restart-game">Restart</p>
+                </div>
+            </div>
+            <div id="player1" class="player"></div>
+            <div id="player2" class="player"></div>
+        </div>
+        <div id="ball"></div>
+    </div>
+
+
+</body>
+
+</html>

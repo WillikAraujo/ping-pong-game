@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.menu-game{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  h1{
+    margin-bottom: 30px;
+    font-size: 48px;
+  }
+
+  .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+    li:not(:last-child){
+      margin-bottom: 10px;
+    }
+
+    li{
+      cursor: pointer
+    }
+  }
+}
+
+
+.restart-game{
+  margin-top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu{
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .game-over{
+    font-size: 50px;
+  }
+
+  .menu-options{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+#game-area {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    border: 2px solid black;
+    background-color: black;
+    overflow: hidden;
+  }
+
+#player1,#player2, #ball{
+  position: absolute;
+  background-color: white;
+} 
+
+#player1,#player2{
+  width: 7.5px;
+  height: 100px;
+}
+
+#ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.hide{
+  display: none !important;
+}
